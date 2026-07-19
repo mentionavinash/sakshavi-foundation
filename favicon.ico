@@ -1,0 +1,50 @@
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Sakshavi Foundation</title>
+
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- SEO -->
+<meta name="description"
+content="Sakshavi Foundation is dedicated to education, digital empowerment, environmental awareness and community development.">
+
+
+<meta name="keywords"
+content="Sakshavi Foundation, NGO, social service, education, volunteer, community development">
+
+
+<meta name="author"
+content="Avinash Kumar">
+
+
+<meta name="robots"
+content="index, follow">
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/animations.css">
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+
+</head>
