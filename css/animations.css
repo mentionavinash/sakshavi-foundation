@@ -2,98 +2,376 @@
    Sakshavi Foundation Animations
 ========================================== */
 
+
+/* Global Smooth Transition */
+
 *{
-    transition: all 0.3s ease;
+
+    transition:all 0.3s ease;
+
 }
 
-/* Fade In Animation */
+
+
+/* ================= Fade In ================= */
+
 
 @keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
 }
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
 
 .fade-in{
+
     animation:fadeIn 1s ease forwards;
+
 }
 
-/* Floating Animation */
+
+
+
+
+/* ================= Slide From Left ================= */
+
+
+@keyframes slideLeft{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateX(-40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+}
+
+
+
+.slide-left{
+
+    animation:slideLeft 1s ease forwards;
+
+}
+
+
+
+
+
+/* ================= Slide From Right ================= */
+
+
+@keyframes slideRight{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateX(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+}
+
+
+
+.slide-right{
+
+    animation:slideRight 1s ease forwards;
+
+}
+
+
+
+
+
+/* ================= Floating Animation ================= */
+
 
 @keyframes floating{
-    0%{
-        transform:translateY(0);
-    }
-    50%{
-        transform:translateY(-10px);
-    }
-    100%{
-        transform:translateY(0);
-    }
+
+
+0%{
+
+    transform:translateY(0);
+
 }
+
+
+50%{
+
+    transform:translateY(-10px);
+
+}
+
+
+100%{
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
 
 .float{
+
     animation:floating 3s ease-in-out infinite;
+
 }
 
-/* Button Hover */
+
+
+
+
+/* ================= Buttons ================= */
+
 
 .btn{
-    transition:0.3s;
+
+    transition:.3s;
+
 }
+
+
 
 .btn:hover{
+
     transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.25);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
 }
 
-/* Card Hover */
+
+
+
+
+/* ================= Cards ================= */
+
 
 .card{
-    transition:0.3s;
+
+    transition:.3s;
+
 }
+
+
 
 .card:hover{
+
     transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
 }
 
-/* Navigation Underline */
+
+
+
+
+/* ================= Story / Founder Animation ================= */
+
+
+.story-card{
+
+    animation:fadeIn 1s ease;
+
+}
+
+
+
+
+
+/* ================= Navigation Underline ================= */
+
 
 nav a{
+
     position:relative;
+
 }
+
+
 
 nav a::after{
+
+
     content:"";
+
     position:absolute;
+
     width:0;
+
     height:2px;
+
     left:0;
+
     bottom:-5px;
+
     background:#FFD700;
-    transition:0.3s;
+
+    transition:.3s;
+
+
 }
+
+
 
 nav a:hover::after{
+
+
     width:100%;
+
+
 }
 
-/* Hero Animation */
+
+
+
+
+/* ================= Hero Animation ================= */
+
 
 .hero h1{
+
+
     animation:fadeIn 1s ease;
+
+
 }
+
+
 
 .hero p{
+
+
     animation:fadeIn 1.4s ease;
+
+
 }
 
+
+
 .hero .btn{
+
+
     animation:fadeIn 1.8s ease;
+
+
+}
+
+
+
+
+
+/* ================= Gallery Hover ================= */
+
+
+.gallery img{
+
+    transition:.4s;
+
+}
+
+
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ================= Contact Form Animation ================= */
+
+
+form input,
+form textarea,
+form select{
+
+
+    transition:.3s;
+
+
+}
+
+
+
+form input:focus,
+form textarea:focus,
+form select:focus{
+
+
+    transform:translateY(-2px);
+
+
+}
+
+
+
+
+
+/* ================= Accessibility ================= */
+
+
+@media (prefers-reduced-motion:reduce){
+
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
+
+}
+
+
 }
