@@ -1,0 +1,99 @@
+/* ==========================================
+   Sakshavi Foundation Animations
+========================================== */
+
+*{
+    transition: all 0.3s ease;
+}
+
+/* Fade In Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.fade-in{
+    animation:fadeIn 1s ease forwards;
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.float{
+    animation:floating 3s ease-in-out infinite;
+}
+
+/* Button Hover */
+
+.btn{
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Card Hover */
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Navigation Underline */
+
+nav a{
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#FFD700;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* Hero Animation */
+
+.hero h1{
+    animation:fadeIn 1s ease;
+}
+
+.hero p{
+    animation:fadeIn 1.4s ease;
+}
+
+.hero .btn{
+    animation:fadeIn 1.8s ease;
+}
