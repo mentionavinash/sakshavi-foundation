@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://sakshavifoundation.dpdns.org/sitemap.xml
